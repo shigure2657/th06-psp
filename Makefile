@@ -1,9 +1,3 @@
-#--[DXライブラリMakefile]-----------------------------------------------#
-#                                                                      
-#                                   :Let's Begin Linux配布スクリプト生成     
-#                                   :hiroumauma                        
-#-----------------------------------------------------------------------#
-
 
 TARGET = main.c
 OBJS = main.o 
@@ -21,12 +15,8 @@ CXXFLAGS =  -fno-exceptions -fno-rtti
 ASFLAGS = 
 LIBDIR =
 LIBS = -L/usr/local/pspdev/psp/lib -L/lib -L/lib
-LIBS += ../include/psp_dx/dxlibp.a -lpspgu -lz -lm -lpsprtc -lpspaudio -lpspaudiocodec -lpsputility -lpspvalloc -lpsppower#DXライブラリPortable使用時に追加
+LIBS += ../include/psp_dx/dxlibp.a -lpspgu -lz -lm -lpsprtc -lpspaudio -lpspaudiocodec -lpsputility -lpspvalloc -lpsppower
 EXTRA_TARGETS = EBOOT.PBP
-PSP_EBOOT_TITLE = DX_LIB_TEST
-PSP_EBOOT_ICON = ./EBOOT_SET/ICON0.PNG
-PSP_EBOOT_UNKPNG = ./EBOOT_SET/PIC0.PNG
-PSP_EBOOT_PIC1 = ./EBOOT_SET/PIC1.PNG
-#PSP_EBOOT_SND0 = ./EBOOT_SET/SND0.AT3
+PSP_EBOOT_TITLE = th06-psp
 
 include $(PSPSDK)/lib/build.mak

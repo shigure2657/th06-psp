@@ -8,7 +8,7 @@ int main()
 {
     int bg;
     if(DxLib_Init() == -1)return -1;
-    bg = LoadGraph("./DATE/lbl.png");
+    bg = LoadGraph("./img/th06logo.png");
     while(ProcessMessage() != -1)
     {
         ClearDrawScreen();
