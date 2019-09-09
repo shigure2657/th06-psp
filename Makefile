@@ -18,5 +18,6 @@ LIBS = -L/usr/local/pspdev/psp/lib -L/lib -L/lib
 LIBS += ../include/psp_dx/dxlibp.a -lpspgu -lz -lm -lpsprtc -lpspaudio -lpspaudiocodec -lpsputility -lpspvalloc -lpsppower
 EXTRA_TARGETS = EBOOT.PBP
 PSP_EBOOT_TITLE = th06-psp
+PSP_EBOOT_ICON = ICON0.png
 
 include $(PSPSDK)/lib/build.mak
